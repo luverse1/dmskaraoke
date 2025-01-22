@@ -8,13 +8,13 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: "urlredirect-e2640",
-  storageBucket: "urlredirect-e2640.appspot.com",
-  messagingSenderId: "841657385917",
-  appId: "1:841657385917:web:93e39dace4204f649d88d4",
-  measurementId: "G-T6TF32Y4FF"
+  apiKey: "AIzaSyB0QvC731kFm-GrC0IeTguKI7bn_bTJTCc",
+  authDomain: "roblox-dms-karaoke-system.firebaseapp.com",
+  projectId: "roblox-dms-karaoke-system",
+  storageBucket: "roblox-dms-karaoke-system.firebasestorage.app",
+  messagingSenderId: "434254145856",
+  appId: "1:434254145856:web:f1562589b69a9c240732a5",
+  measurementId: "G-F0R47DK318"
 };
 
 // Initialize Firebase

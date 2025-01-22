@@ -79,8 +79,7 @@ button:hover {
   margin-bottom: 2rem;
 }
 
-.add-redirect-form input[type="text"],
-.add-redirect-form input[type="url"] {
+.add-redirect-form input[type="text"]{
   flex: 1 1 calc(50% - 1rem);
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -89,8 +88,21 @@ button:hover {
   transition: border-color 0.3s ease;
 }
 
-.add-redirect-form input[type="text"]:focus,
-.add-redirect-form input[type="url"]:focus {
+.add-redirect-form input[type="text"]:focus {
+  border-color: #0066ff;
+}
+
+.add-redirect-form textarea[type="text"]{
+  flex: 1 1 calc(50% - 1rem);
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.add-redirect-form textarea[type="text"]:focus {
   border-color: #0066ff;
 }
 
