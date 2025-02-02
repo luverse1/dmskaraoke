@@ -16,8 +16,6 @@ const AllSongs = () => {
           throw new Error(`Error fetching songs: ${response.status}`);
         }
         const data = await response.json();
-
-        // Firestore 데이터 변환
         const formattedSongs = data.documents.map((doc) => ({
           id: doc.name.split("/").pop(),
           ...doc.fields,
