@@ -221,11 +221,15 @@ const AdminPage = () => {
       alert("가사는 LRC 형식이어야 합니다.");
       return;
     }
-
+  
     try {
       const songRef = doc(db, 'Songs', editedSong.id);
       const convertedLyrics = convertLRCToJSON(editedSong.Lyrics);
-      await updateDoc(songRef, { ...editedSong, Lyrics: convertedLyrics });
+  
+      const { id, ...updatedSongData } = editedSong;
+  
+      await updateDoc(songRef, { ...updatedSongData, Lyrics: convertedLyrics });
+  
       setIsEditing(false);
       setSelectedSong({ ...editedSong, Lyrics: convertedLyrics });
       fetchSongs();
@@ -233,6 +237,7 @@ const AdminPage = () => {
       console.error('노래 수정 실패:', error);
     }
   };
+  
 
   if (isLoading) {
     return (
