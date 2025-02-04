@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/dmskaraoke/static/css/main.6aeb2ca6.css",
-    "main.js": "/dmskaraoke/static/js/main.535a6ce2.js",
+    "main.js": "/dmskaraoke/static/js/main.f05174cd.js",
     "static/js/206.ad4759b8.chunk.js": "/dmskaraoke/static/js/206.ad4759b8.chunk.js",
     "index.html": "/dmskaraoke/index.html"
   },
   "entrypoints": [
     "static/css/main.6aeb2ca6.css",
-    "static/js/main.535a6ce2.js"
+    "static/js/main.f05174cd.js"
   ]
 }
